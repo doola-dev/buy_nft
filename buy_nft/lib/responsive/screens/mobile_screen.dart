@@ -10,6 +10,9 @@ class MobileScreen extends HookWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Colors.blue,
+      drawer: Drawer(
+        
+      ),
     );
   }
 }
