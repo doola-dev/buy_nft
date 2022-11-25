@@ -8,6 +8,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "50.0.0"
+  adaptive_scrollbar:
+    dependency: "direct main"
+    description:
+      name: adaptive_scrollbar
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.1.2"
   analyzer:
     dependency: transitive
     description:
@@ -303,6 +310,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.2.0"
+  hovering:
+    dependency: transitive
+    description:
+      name: hovering
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.4"
   http:
     dependency: transitive
     description:
@@ -513,6 +527,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.2.1"
+  rxdart:
+    dependency: transitive
+    description:
+      name: rxdart
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.27.7"
   shared_preferences:
     dependency: transitive
     description:

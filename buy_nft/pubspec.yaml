@@ -36,6 +36,7 @@ dependencies:
   google_fonts: ^3.0.1
   nb_utils: ^4.6.24
   flutter_gen: ^5.1.0+1
+  adaptive_scrollbar: ^2.1.2
  
 
 dev_dependencies:
