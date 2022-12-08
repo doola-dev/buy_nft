@@ -19,18 +19,24 @@ class $AssetsIconsGen {
   /// File path: assets/icons/files.png
   AssetGenImage get files => const AssetGenImage('assets/icons/files.png');
 
-  /// File path: assets/icons/lsit.png
-  AssetGenImage get lsit => const AssetGenImage('assets/icons/lsit.png');
+  /// File path: assets/icons/list.png
+  AssetGenImage get list => const AssetGenImage('assets/icons/list.png');
 
   /// File path: assets/icons/task.png
   AssetGenImage get task => const AssetGenImage('assets/icons/task.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [computer, files, lsit, task];
+  List<AssetGenImage> get values => [computer, files, list, task];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/brands.png
+  AssetGenImage get brands => const AssetGenImage('assets/images/brands.png');
+
+  /// File path: assets/images/cmp.png
+  AssetGenImage get cmp => const AssetGenImage('assets/images/cmp.png');
 
   /// File path: assets/images/female-1.png
   AssetGenImage get female1 =>
@@ -43,7 +49,7 @@ class $AssetsImagesGen {
   AssetGenImage get male => const AssetGenImage('assets/images/male.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [female1, female, male];
+  List<AssetGenImage> get values => [brands, cmp, female1, female, male];
 }
 
 class Assets {
