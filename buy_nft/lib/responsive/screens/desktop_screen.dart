@@ -130,7 +130,7 @@ class DesktopScreen extends HookWidget {
                           // mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              'FEAUTURED ON',
+                              'FEUTURED ON',
                               // textAlign: TextAlign.left,
 
                               style: GoogleFonts.outfit(
