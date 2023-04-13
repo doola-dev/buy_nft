@@ -112,12 +112,7 @@ class DesktopScreen extends HookWidget {
                             const Spacer(),
                             ConstrainedBox(
                               constraints: const BoxConstraints(),
-                              child: Assets.icons.computer.image(
-                                scale: 1.2
-                               
-                              
-                                
-                              ),
+                              child: Assets.icons.computer.image(scale: 1.2),
                             ),
                             16.height,
 
@@ -126,13 +121,12 @@ class DesktopScreen extends HookWidget {
                         ),
                         80.height,
                         Column(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          // crossAxisAlignment: CrossAxisAlignment.stretch,
                           // mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              'FEUTURED ON',
+                              'FEATURED ON',
                               // textAlign: TextAlign.left,
-
                               style: GoogleFonts.outfit(
                                 color: Colors.white,
                                 fontSize: 16,
@@ -140,7 +134,39 @@ class DesktopScreen extends HookWidget {
                               ),
                             ),
                             16.height,
-                            Assets.images.brands.image()
+                            Assets.images.brands.image(scale: 1.5)
+                          ],
+                        ),
+                    85.height,
+                        Row(mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            ConstrainedBox(
+                              constraints: const BoxConstraints(),
+                              child: Assets.icons.list.image(scale: 1.3),
+                            ),
+                            const Spacer(),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                            
+                              children: [
+                                Text(
+                                  'ANALYTICS',
+                                  textAlign: TextAlign.left,
+                                  style: GoogleFonts.outfit(
+                                    color: AppColor.lightBlue,
+                                    fontSize: 20,
+                                    //  fontWeight: FontWeight.med
+                                  ),
+                                ),
+                                20.height,
+                                Text('Built-In Analytics\nTo Track Your Nfts',
+                                    style: GoogleFonts.outfit(
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.white,
+                                        height: 1,
+                                        fontSize: 55)),
+                              ],
+                            )
                           ],
                         )
                       ],
