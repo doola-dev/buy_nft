@@ -3,6 +3,8 @@ import 'package:buy_nft/gen/assets.gen.dart';
 import 'package:buy_nft/gen/colors.gen.dart';
 import 'package:buy_nft/widgets/constants.dart';
 import 'package:buy_nft/widgets/gradients.dart';
+import 'package:buy_nft/widgets/testimonials.dart';
+import 'package:buy_nft/widgets/testimonials_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -16,6 +18,7 @@ class DesktopScreen extends HookWidget {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     final ScrollController verticalScroll = ScrollController();
+    UserTestimonials? usert;
 
     return Scaffold(
       backgroundColor: AppColor.primary,
@@ -62,7 +65,7 @@ class DesktopScreen extends HookWidget {
                                     style: GoogleFonts.outfit(
                                         // fontWeight: FontWeight.w600,
                                         color: Colors.white,
-                                        height: 1,
+                                        height: 1.6,
                                         fontSize: 18)),
                                 22.height,
                                 Row(
@@ -137,17 +140,21 @@ class DesktopScreen extends HookWidget {
                             Assets.images.brands.image(scale: 1.5)
                           ],
                         ),
-                    85.height,
-                        Row(mainAxisAlignment: MainAxisAlignment.start,
+                        85.height,
+                        Row(
                           children: [
-                            ConstrainedBox(
-                              constraints: const BoxConstraints(),
-                              child: Assets.icons.list.image(scale: 1.3),
+                            Column(
+                              children: [
+                                105.height,
+                                ConstrainedBox(
+                                  constraints: const BoxConstraints(),
+                                  child: Assets.icons.list.image(scale: 1.3),
+                                ),
+                              ],
                             ),
                             const Spacer(),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                            
                               children: [
                                 Text(
                                   'ANALYTICS',
@@ -158,17 +165,93 @@ class DesktopScreen extends HookWidget {
                                     //  fontWeight: FontWeight.med
                                   ),
                                 ),
-                                20.height,
+                                24.height,
                                 Text('Built-In Analytics\nTo Track Your Nfts',
                                     style: GoogleFonts.outfit(
                                         fontWeight: FontWeight.w600,
                                         color: Colors.white,
                                         height: 1,
                                         fontSize: 55)),
+                                Text(
+                                    'Use our built-in analytics dashboard to pull\nvaluable insights and monitor the value of your\nKrypto portfolio over time.',
+                                    style: GoogleFonts.outfit(
+
+                                        // fontWeight: FontWeight.w600,
+                                        color: Colors.white,
+                                        height: 1.6,
+                                        fontSize: 18)),
                               ],
-                            )
+                            ),
                           ],
-                        )
+                        ),
+                        85.height,
+                        Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'ANALYTICS',
+                                  textAlign: TextAlign.left,
+                                  style: GoogleFonts.outfit(
+                                    color: AppColor.lightBlue,
+                                    fontSize: 20,
+                                    //  fontWeight: FontWeight.med
+                                  ),
+                                ),
+                                24.height,
+                                Text('Built-In Analytics\nTo Track Your Nfts',
+                                    style: GoogleFonts.outfit(
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.white,
+                                        height: 1,
+                                        fontSize: 55)),
+                                Text(
+                                    'Use our built-in analytics dashboard to pull\nvaluable insights and monitor the value of your\nKrypto portfolio over time.',
+                                    style: GoogleFonts.outfit(
+
+                                        // fontWeight: FontWeight.w600,
+                                        color: Colors.white,
+                                        height: 1.6,
+                                        fontSize: 18)),
+                              ],
+                            ),
+                            const Spacer(),
+                            Column(
+                              children: [
+                                85.height,
+                                ConstrainedBox(
+                                  constraints: const BoxConstraints(),
+                                  child: Assets.icons.task.image(scale: 1.3),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        150.height,
+                        Column(
+                          children: [
+                            Text(
+                              'TESTIMONIALS',
+                              textAlign: TextAlign.center,
+                              style: GoogleFonts.outfit(
+                                color: AppColor.lightBlue,
+                                fontSize: 20,
+                                //  fontWeight: FontWeight.med
+                              ),
+                            ),
+                            25.height,
+                            Text('Read What Others\n Have To Say',
+                                textAlign: TextAlign.center,
+                                style: GoogleFonts.outfit(
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.white,
+                                    height: 1,
+                                    fontSize: 55)),
+                            85.height,
+                            const Testimonials()
+                          ],
+                        ),
                       ],
                     ).paddingSymmetric(horizontal: 100)
                   ],
