@@ -11,10 +11,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 class DesktopScreen extends HookWidget {
-  const DesktopScreen({super.key});
+   
+  const DesktopScreen( {super.key});
 
   @override
   Widget build(BuildContext context) {
+    
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     final ScrollController verticalScroll = ScrollController();
@@ -249,7 +251,7 @@ class DesktopScreen extends HookWidget {
                                     height: 1,
                                     fontSize: 55)),
                             85.height,
-                            const Testimonials()
+                          const Testimonials()
                           ],
                         ),
                       ],

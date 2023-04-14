@@ -1,5 +1,6 @@
 import 'package:buy_nft/widgets/testimonials_list.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../gen/colors.gen.dart';
@@ -33,7 +34,7 @@ class Testimonials extends StatelessWidget {
       1,
       0,
     ]);
-    // UserTestimonials? userTestimonials;
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       // mainAxisAlignment: MainAxisAlignment.center,
@@ -48,15 +49,33 @@ class Testimonials extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                      margin: const EdgeInsets.only(right: 20, left: 20),
+                      padding: const EdgeInsets.only(left: 25, right: 25),
+                      margin: const EdgeInsets.only(right: 8, left: 8),
                       height: 320,
                       width: 320,
                       decoration: BoxDecoration(
                           color: AppColor.secondary.withOpacity(0.18),
                           borderRadius: BorderRadius.circular(20)),
-                      child: Column(children: const [
-                        Text('dddddddddddd'),
-                        Text('dddddddddddd'),
+                      child: Column(children: [
+                        80.height,
+                        Text(
+                          testimonials[index].name,
+                          textAlign: TextAlign.left,
+                          style: GoogleFonts.outfit(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.normal),
+                        ),
+                        30.height,
+                        Text(
+                          testimonials[index].message,
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.outfit(
+                              color: Colors.white,
+                              height: 1.6,
+                              fontSize: 18,
+                              fontWeight: FontWeight.normal),
+                        ),
                       ]),
                     ),
                     20.height
@@ -70,7 +89,7 @@ class Testimonials extends StatelessWidget {
                       radius: 50,
                       backgroundColor: AppColor.lightBlue,
                       backgroundImage: AssetImage(
-                        testimonials.first.profilePicture,
+                         testimonials[index].profilePicture,
                       ),
                     ),
                   ),
@@ -78,7 +97,7 @@ class Testimonials extends StatelessWidget {
                 const Positioned(
                   top: -50,
                   child: Opacity(
-                    opacity: 0.4,
+                    opacity: 0.6,
                     child: CircleAvatar(
                       radius: 50,
                       backgroundColor: AppColor.secondary,
