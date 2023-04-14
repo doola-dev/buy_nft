@@ -11,12 +11,28 @@ class Testimonials extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const ColorFilter identity = ColorFilter.matrix(<double>[
-  1, 7, 0, 0, 0,
-  0, 1, 0, 0, 0,
-  0, 0, 1, 0, 0,
-  0, 8, 0, 1, 0,
-]);
+    const ColorFilter greyscale = ColorFilter.matrix(<double>[
+      0.2126,
+      0.7152,
+      0.0722,
+      0,
+      0,
+      0.2126,
+      0.7152,
+      0.0722,
+      0,
+      0,
+      0.2126,
+      0.7152,
+      0.0722,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+    ]);
     // UserTestimonials? userTestimonials;
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -48,14 +64,30 @@ class Testimonials extends StatelessWidget {
                 ),
                 Positioned(
                   top: -50,
-                  child: CircleAvatar(
-                    radius: 50,
-                    backgroundColor: AppColor.lightBlue,
-                    backgroundImage: AssetImage(
-                      testimonials.first.profilePicture,
+                  child: ColorFiltered(
+                    colorFilter: greyscale,
+                    child: CircleAvatar(
+                      radius: 50,
+                      backgroundColor: AppColor.lightBlue,
+                      backgroundImage: AssetImage(
+                        testimonials.first.profilePicture,
+                      ),
                     ),
                   ),
-                )
+                ),
+                const Positioned(
+                  top: -50,
+                  child: Opacity(
+                    opacity: 0.4,
+                    child: CircleAvatar(
+                      radius: 50,
+                      backgroundColor: AppColor.secondary,
+                      // backgroundImage: AssetImage(
+                      //   testimonials.first.profilePicture,
+                      // ),
+                    ),
+                  ),
+                ),
               ]),
         ),
       ],

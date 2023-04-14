@@ -29,20 +29,20 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  adaptive_scrollbar: ^2.1.2
+  colorfilter_generator: ^0.0.8
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_gen: ^5.1.0+1
   flutter_hooks: ^0.18.5+1
   google_fonts: ^3.0.1
   nb_utils: ^4.6.24
-  flutter_gen: ^5.1.0+1
-  adaptive_scrollbar: ^2.1.2
- 
 
 dev_dependencies:
-  flutter_lints: ^2.0.0
-  flutter_gen_runner: ^5.0.2
   build_runner: null
+  flutter_gen_runner: ^5.0.2
+  flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
 
@@ -52,11 +52,10 @@ flutter_gen:
   line_length: 80 # Optional (default: 80)
 
   # Optional
-  #flutter_svg: 
-    #flare_flutter: true
-    #rive: true
-    #lottie: true
-
+  #flutter_svg:
+  #flare_flutter: true
+  #rive: true
+  #lottie: true
   colors:
     enabled: true
     outputs:
@@ -70,5 +69,3 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/
-
-
