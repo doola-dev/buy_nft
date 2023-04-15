@@ -5,18 +5,17 @@ import 'package:buy_nft/widgets/constants.dart';
 import 'package:buy_nft/widgets/gradients.dart';
 import 'package:buy_nft/widgets/testimonials.dart';
 import 'package:buy_nft/widgets/testimonials_list.dart';
+import 'package:buy_nft/widgets/view_pricing_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 class DesktopScreen extends HookWidget {
-   
-  const DesktopScreen( {super.key});
+  const DesktopScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     final ScrollController verticalScroll = ScrollController();
@@ -251,7 +250,9 @@ class DesktopScreen extends HookWidget {
                                     height: 1,
                                     fontSize: 55)),
                             85.height,
-                          const Testimonials()
+                            const Testimonials(),
+                            50.height,
+                           const ViewPricing()
                           ],
                         ),
                       ],
