@@ -37,7 +37,6 @@ class Testimonials extends StatelessWidget {
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      // mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ...List.generate(
           testimonials.length,
@@ -47,10 +46,11 @@ class Testimonials extends StatelessWidget {
               alignment: Alignment.topCenter,
               children: [
                 Column(
+               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
                       padding: const EdgeInsets.only(left: 25, right: 25),
-                      margin: const EdgeInsets.only(right: 8, left: 8),
+                      margin: const EdgeInsets.only(right: 6, left: 6),
                       height: 320,
                       width: 320,
                       decoration: BoxDecoration(
@@ -89,7 +89,7 @@ class Testimonials extends StatelessWidget {
                       radius: 50,
                       backgroundColor: AppColor.lightBlue,
                       backgroundImage: AssetImage(
-                         testimonials[index].profilePicture,
+                        testimonials[index].profilePicture,
                       ),
                     ),
                   ),
@@ -101,9 +101,6 @@ class Testimonials extends StatelessWidget {
                     child: CircleAvatar(
                       radius: 50,
                       backgroundColor: AppColor.secondary,
-                      // backgroundImage: AssetImage(
-                      //   testimonials.first.profilePicture,
-                      // ),
                     ),
                   ),
                 ),

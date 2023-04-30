@@ -1,6 +1,7 @@
 import 'package:adaptive_scrollbar/adaptive_scrollbar.dart';
 import 'package:buy_nft/gen/assets.gen.dart';
 import 'package:buy_nft/gen/colors.gen.dart';
+import 'package:buy_nft/widgets/call_to_action.dart';
 import 'package:buy_nft/widgets/constants.dart';
 import 'package:buy_nft/widgets/gradients.dart';
 import 'package:buy_nft/widgets/testimonials.dart';
@@ -10,6 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nb_utils/nb_utils.dart';
+
+import '../../widgets/news_letter.dart';
 
 class DesktopScreen extends HookWidget {
   const DesktopScreen({super.key});
@@ -60,7 +63,7 @@ class DesktopScreen extends HookWidget {
                                         color: Colors.white,
                                         height: 1,
                                         fontSize: 80)),
-                                22.height,
+                                14.height,
                                 Text(
                                     'The most secure marketplace for buying\n and selling unique crypto assests',
                                     style: GoogleFonts.outfit(
@@ -68,7 +71,7 @@ class DesktopScreen extends HookWidget {
                                         color: Colors.white,
                                         height: 1.6,
                                         fontSize: 18)),
-                                22.height,
+                                14.height,
                                 Row(
                                   children: [
                                     Container(
@@ -252,7 +255,26 @@ class DesktopScreen extends HookWidget {
                             85.height,
                             const Testimonials(),
                             50.height,
-                           const ViewPricing()
+                            const ViewPricing(),
+                            50.height,
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Krypto',
+                                  textAlign: TextAlign.left,
+                                  style: GoogleFonts.outfit(
+                                      color: Colors.white,
+                                      fontSize: 25,
+                                      fontWeight: FontWeight.w700),
+                                ),
+                                100.width,
+                                const CallToAction(),
+                                80.width,
+                                const NewsLetter()
+                              ],
+                            )
                           ],
                         ),
                       ],
