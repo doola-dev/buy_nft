@@ -41,7 +41,6 @@ class ViewPricing extends StatelessWidget {
          InkWell(
           hoverColor: Colors.amber,
              onTap: () {},
-
             child: Container(
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(35),
@@ -54,10 +53,12 @@ class ViewPricing extends StatelessWidget {
                     color: Colors.white,
                     fontSize: 22,
                     letterSpacing: 1.5,
-                    fontWeight: FontWeight.w400),
-                 
+                    fontWeight: FontWeight.w400),  
               ),
+
+              
             ),
+
           )
         ],
       ),
