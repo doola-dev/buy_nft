@@ -21,7 +21,6 @@ class DesktopScreen extends HookWidget {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     final ScrollController verticalScroll = ScrollController();
-   
 
     return Scaffold(
       backgroundColor: AppColor.primary,
@@ -36,8 +35,8 @@ class DesktopScreen extends HookWidget {
                 Stack(
                   clipBehavior: Clip.none,
                   children: [
-                    gradientTop,
-                    gradientRight,
+                    Positioned(top: -450, left: 100, child: gradientTop),
+                    Positioned(right: -600, top: 150, child: gradientRight),
                     Column(
                       children: [
                         80.height,
