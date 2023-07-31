@@ -1,4 +1,3 @@
 {
-    "cmake.configureOnOpen": true,
-    "cmake.sourceDirectory": "E:/portfolio/website/buy_nft/linux"
+    "cmake.configureOnOpen": true
 }
