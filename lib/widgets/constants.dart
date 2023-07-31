@@ -16,5 +16,18 @@ var navigationBar = Row(
         style: GoogleFonts.outfit(color: Colors.white, fontSize: 17)),
   ],
 );
-
-
+var verticalNavigationBar = Column(
+  crossAxisAlignment: CrossAxisAlignment.start,
+  children: [
+    Text('About', style: GoogleFonts.outfit(color: Colors.white, fontSize: 20)),
+    75.height,
+    Text('Pricing',
+        style: GoogleFonts.outfit(color: Colors.white, fontSize: 20)),
+    75.height,
+    Text('Contacts',
+        style: GoogleFonts.outfit(color: Colors.white, fontSize: 20)),
+    75.height,
+    Text('Buy nft',
+        style: GoogleFonts.outfit(color: Colors.white, fontSize: 20)),
+  ],
+).paddingSymmetric(vertical: 40, horizontal: 20);
