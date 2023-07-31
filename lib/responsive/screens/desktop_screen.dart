@@ -46,7 +46,7 @@ class DesktopScreen extends HookWidget {
                               Text('KYPTO',
                                   style: GoogleFonts.outfit(
                                       color: Colors.white, fontSize: 20)),
-                              navigationBar
+                              InkWell(onTap: () {}, child: navigationBar)
                             ]),
                         180.height,
                         Row(
