@@ -21,7 +21,7 @@ class MobileScreen extends HookWidget {
       key: _globalKey,
       backgroundColor: AppColor.primary,
       endDrawer: Drawer(
-        backgroundColor: Colors.transparent,
+        backgroundColor: AppColor.primary.withOpacity(0.7),
         child: ListView(
           children: [
             const SizedBox(
