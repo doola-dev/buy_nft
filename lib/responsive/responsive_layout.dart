@@ -1,3 +1,4 @@
+import 'package:buy_nft/constants/screen_dimensions.dart';
 import 'package:flutter/material.dart';
 
 class ResponsiveLayout extends StatelessWidget {
@@ -14,13 +15,12 @@ class ResponsiveLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
-      if (constraints.maxWidth < 700) {
+      if (constraints.maxWidth < kMaxMobileWidth) {
         return mobileScreen;
-      } else if (constraints.maxWidth < 1200 ) {
+      } else if (constraints.maxWidth < kmaxDesktopWidth) {
         return tabletScreen;
-      } else{
+      } else {
         return desktopScreen;
- 
       }
     });
   }

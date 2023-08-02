@@ -77,8 +77,8 @@ class MobileScreen extends HookWidget {
 
                           // navigationBar
                         ]),
-                    //     50.height,
-                    // const Hometitle()
+                    50.height,
+                    const Hometitle()
                   ],
                 ).paddingSymmetric(horizontal: 50)
               ],

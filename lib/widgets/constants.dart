@@ -56,3 +56,5 @@ var verticalNavigationBar = Column(
     ),
   ],
 ).paddingSymmetric(vertical: 40, horizontal: 20);
+
+
