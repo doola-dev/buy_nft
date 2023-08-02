@@ -4,6 +4,7 @@ import 'package:buy_nft/gen/colors.gen.dart';
 import 'package:buy_nft/widgets/call_to_action.dart';
 import 'package:buy_nft/widgets/constants.dart';
 import 'package:buy_nft/widgets/gradients.dart';
+import 'package:buy_nft/widgets/home_title.dart';
 import 'package:buy_nft/widgets/testimonials.dart';
 import 'package:buy_nft/widgets/view_pricing_tab.dart';
 import 'package:flutter/material.dart';
@@ -55,21 +56,10 @@ class DesktopScreen extends HookWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Discover\nAnd Collect\nRare NFTs',
-                                    style: GoogleFonts.outfit(
-                                        fontWeight: FontWeight.w600,
-                                        color: Colors.white,
-                                        height: 1,
-                                        fontSize: 80)),
+                                const Hometitle(),
                                 14.height,
-                                Text(
-                                    'The most secure marketplace for buying\n and selling unique crypto assests',
-                                    style: GoogleFonts.outfit(
-                                        // fontWeight: FontWeight.w600,
-                                        color: Colors.white,
-                                        height: 1.6,
-                                        fontSize: 18)),
-                                14.height,
+                              
+                              
                                 Row(
                                   children: [
                                     InkWell(
