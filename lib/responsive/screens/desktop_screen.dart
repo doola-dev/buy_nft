@@ -1,6 +1,7 @@
 import 'package:adaptive_scrollbar/adaptive_scrollbar.dart';
 import 'package:buy_nft/gen/assets.gen.dart';
 import 'package:buy_nft/gen/colors.gen.dart';
+import 'package:buy_nft/widgets/buy_sell_button.dart';
 import 'package:buy_nft/widgets/call_to_action.dart';
 import 'package:buy_nft/widgets/constants.dart';
 import 'package:buy_nft/widgets/gradients.dart';
@@ -56,57 +57,9 @@ class DesktopScreen extends HookWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Hometitle(),
+                                const HomeTitle(),
                                 14.height,
-                              
-                              
-                                Row(
-                                  children: [
-                                    InkWell(
-                                      onTap: () {},
-                                      child: Container(
-                                          height: 55,
-                                          width: 250,
-                                          decoration: BoxDecoration(
-                                            color: AppColor.secondary,
-                                            borderRadius:
-                                                BorderRadius.circular(45),
-                                          ),
-                                          child: Text(
-                                            'BUY NFTS',
-                                            textAlign: TextAlign.center,
-                                            style: GoogleFonts.outfit(
-                                              color: Colors.white,
-
-                                              fontSize: 16,
-                                              //  fontWeight: FontWeight.med
-                                            ),
-                                          ).center()),
-                                    ),
-                                    16.width,
-                                    InkWell(
-                                        onTap: () {},
-                                        child: Container(
-                                            height: 55,
-                                            width: 250,
-                                            decoration: BoxDecoration(
-                                              border: Border.all(
-                                                  width: 1,
-                                                  color: AppColor.lightBlue),
-                                              borderRadius:
-                                                  BorderRadius.circular(45),
-                                            ),
-                                            child: Text(
-                                              'SELL NFTS',
-                                              textAlign: TextAlign.center,
-                                              style: GoogleFonts.outfit(
-                                                color: Colors.white,
-                                                fontSize: 16,
-                                                //  fontWeight: FontWeight.med
-                                              ),
-                                            ).center()))
-                                  ],
-                                )
+                                const BuySellButton(),
                               ],
                             ),
 

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nb_utils/nb_utils.dart';
 
-class Hometitle extends StatelessWidget {
-  const Hometitle({super.key});
+class HomeTitle extends StatelessWidget {
+  const HomeTitle({super.key});
 
   @override
   Widget build(BuildContext context) {
