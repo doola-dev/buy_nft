@@ -72,44 +72,49 @@ class DesktopScreen extends HookWidget {
                                 14.height,
                                 Row(
                                   children: [
-                                    Container(
-                                        height: 55,
-                                        width: 250,
-                                        decoration: BoxDecoration(
-                                          color: AppColor.secondary,
-                                          borderRadius:
-                                              BorderRadius.circular(45),
-                                        ),
-                                        child: Text(
-                                          'BUY NFTS',
-                                          textAlign: TextAlign.center,
-                                          style: GoogleFonts.outfit(
-                                            color: Colors.white,
+                                    InkWell(
+                                      onTap: () {},
+                                      child: Container(
+                                          height: 55,
+                                          width: 250,
+                                          decoration: BoxDecoration(
+                                            color: AppColor.secondary,
+                                            borderRadius:
+                                                BorderRadius.circular(45),
+                                          ),
+                                          child: Text(
+                                            'BUY NFTS',
+                                            textAlign: TextAlign.center,
+                                            style: GoogleFonts.outfit(
+                                              color: Colors.white,
 
-                                            fontSize: 16,
-                                            //  fontWeight: FontWeight.med
-                                          ),
-                                        ).center()),
+                                              fontSize: 16,
+                                              //  fontWeight: FontWeight.med
+                                            ),
+                                          ).center()),
+                                    ),
                                     16.width,
-                                    Container(
-                                        height: 55,
-                                        width: 250,
-                                        decoration: BoxDecoration(
-                                          border: Border.all(
-                                              width: 1,
-                                              color: AppColor.lightBlue),
-                                          borderRadius:
-                                              BorderRadius.circular(45),
-                                        ),
-                                        child: Text(
-                                          'SELL NFTS',
-                                          textAlign: TextAlign.center,
-                                          style: GoogleFonts.outfit(
-                                            color: Colors.white,
-                                            fontSize: 16,
-                                            //  fontWeight: FontWeight.med
-                                          ),
-                                        ).center())
+                                    InkWell(
+                                        onTap: () {},
+                                        child: Container(
+                                            height: 55,
+                                            width: 250,
+                                            decoration: BoxDecoration(
+                                              border: Border.all(
+                                                  width: 1,
+                                                  color: AppColor.lightBlue),
+                                              borderRadius:
+                                                  BorderRadius.circular(45),
+                                            ),
+                                            child: Text(
+                                              'SELL NFTS',
+                                              textAlign: TextAlign.center,
+                                              style: GoogleFonts.outfit(
+                                                color: Colors.white,
+                                                fontSize: 16,
+                                                //  fontWeight: FontWeight.med
+                                              ),
+                                            ).center()))
                                   ],
                                 )
                               ],
