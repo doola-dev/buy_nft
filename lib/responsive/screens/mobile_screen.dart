@@ -1,7 +1,11 @@
+import 'package:buy_nft/gen/assets.gen.dart';
+import 'package:buy_nft/widgets/analytics_text_widget.dart';
 import 'package:buy_nft/widgets/buy_sell_button.dart';
 import 'package:buy_nft/widgets/constants.dart';
 import 'package:buy_nft/widgets/gradients.dart';
 import 'package:buy_nft/widgets/home_title.dart';
+import 'package:buy_nft/widgets/testimonals_title_widget.dart';
+import 'package:buy_nft/widgets/testimonials.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -80,9 +84,39 @@ class MobileScreen extends HookWidget {
                     50.height,
                     const HomeTitle(),
                     14.height,
-                    const BuySellButton()
+                    const BuySellButton(),
+                    ConstrainedBox(
+                      constraints: const BoxConstraints(),
+                      child: Assets.icons.computer.image(scale: 1),
+                    ),
+                    30.height,
+                    Text('FEATURED ON',
+                        // textAlign: TextAlign.left,
+                        style: GoogleFonts.outfit(
+                          color: Colors.white,
+                          fontSize: 16,
+                          //  fontWeight: FontWeight.med
+                        )).center(),
+                    14.height,
+                    Assets.images.brands.image(scale: 1.5),
+                    50.height,
+                    const Analytics(),
+                    ConstrainedBox(
+                      constraints: const BoxConstraints(),
+                      child: Assets.icons.list.image(scale: 1.2),
+                    ).center(),
+                    14.height,
+                    const Analytics(),
+                    ConstrainedBox(
+                      constraints: const BoxConstraints(),
+                      child: Assets.icons.task.image(scale: 1.3),
+                    ).center(),
+                    14.height,
+                    const TestimonialText(),
+                    85.height,
+                    const Testimonials(),
                   ],
-                ).paddingSymmetric(horizontal: 50)
+                ).paddingSymmetric(horizontal: 20)
               ],
             )
           ],

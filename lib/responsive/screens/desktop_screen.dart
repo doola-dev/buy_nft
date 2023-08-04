@@ -1,11 +1,13 @@
 import 'package:adaptive_scrollbar/adaptive_scrollbar.dart';
 import 'package:buy_nft/gen/assets.gen.dart';
 import 'package:buy_nft/gen/colors.gen.dart';
+import 'package:buy_nft/widgets/analytics_text_widget.dart';
 import 'package:buy_nft/widgets/buy_sell_button.dart';
 import 'package:buy_nft/widgets/call_to_action.dart';
 import 'package:buy_nft/widgets/constants.dart';
 import 'package:buy_nft/widgets/gradients.dart';
 import 'package:buy_nft/widgets/home_title.dart';
+import 'package:buy_nft/widgets/testimonals_title_widget.dart';
 import 'package:buy_nft/widgets/testimonials.dart';
 import 'package:buy_nft/widgets/view_pricing_tab.dart';
 import 'package:flutter/material.dart';
@@ -104,69 +106,13 @@ class DesktopScreen extends HookWidget {
                               ],
                             ),
                             const Spacer(),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'ANALYTICS',
-                                  textAlign: TextAlign.left,
-                                  style: GoogleFonts.outfit(
-                                    color: AppColor.lightBlue,
-                                    fontSize: 20,
-                                    //  fontWeight: FontWeight.med
-                                  ),
-                                ),
-                                24.height,
-                                Text('Built-In Analytics\nTo Track Your Nfts',
-                                    style: GoogleFonts.outfit(
-                                        fontWeight: FontWeight.w600,
-                                        color: Colors.white,
-                                        height: 1,
-                                        fontSize: 55)),
-                                Text(
-                                    'Use our built-in analytics dashboard to pull\nvaluable insights and monitor the value of your\nKrypto portfolio over time.',
-                                    style: GoogleFonts.outfit(
-
-                                        // fontWeight: FontWeight.w600,
-                                        color: Colors.white,
-                                        height: 1.6,
-                                        fontSize: 18)),
-                              ],
-                            ),
+                            const Analytics(),
                           ],
                         ),
                         85.height,
                         Row(
                           children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'ANALYTICS',
-                                  textAlign: TextAlign.left,
-                                  style: GoogleFonts.outfit(
-                                    color: AppColor.lightBlue,
-                                    fontSize: 20,
-                                    //  fontWeight: FontWeight.med
-                                  ),
-                                ),
-                                24.height,
-                                Text('Built-In Analytics\nTo Track Your Nfts',
-                                    style: GoogleFonts.outfit(
-                                        fontWeight: FontWeight.w600,
-                                        color: Colors.white,
-                                        height: 1,
-                                        fontSize: 55)),
-                                Text(
-                                    'Use our built-in analytics dashboard to pull\nvaluable insights and monitor the value of your\nKrypto portfolio over time.',
-                                    style: GoogleFonts.outfit(
-
-                                        // fontWeight: FontWeight.w600,
-                                        color: Colors.white,
-                                        height: 1.6,
-                                        fontSize: 18)),
-                              ],
-                            ),
+                            const Analytics(),
                             const Spacer(),
                             Column(
                               children: [
@@ -182,23 +128,7 @@ class DesktopScreen extends HookWidget {
                         150.height,
                         Column(
                           children: [
-                            Text(
-                              'TESTIMONIALS',
-                              textAlign: TextAlign.center,
-                              style: GoogleFonts.outfit(
-                                color: AppColor.lightBlue,
-                                fontSize: 20,
-                                //  fontWeight: FontWeight.med
-                              ),
-                            ),
-                            25.height,
-                            Text('Read What Others\n Have To Say',
-                                textAlign: TextAlign.center,
-                                style: GoogleFonts.outfit(
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.white,
-                                    height: 1,
-                                    fontSize: 55)),
+                            const TestimonialText(),
                             85.height,
                             const Testimonials(),
                             50.height,

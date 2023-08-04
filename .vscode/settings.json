@@ -1,7 +1,0 @@
-{
-    "cmake.configureOnOpen": true,
-    "cmake.sourceDirectory": "E:/portfolio/website/buy_nft/linux",
-    "conventionalCommits.scopes": [
-        "Mobile View"
-    ]
-}
