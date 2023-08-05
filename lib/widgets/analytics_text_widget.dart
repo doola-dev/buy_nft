@@ -40,21 +40,24 @@ class Analytics extends StatelessWidget {
                     fontSize: constraint.maxWidth < kMaxMobileWidth ? 35 : 55)),
           ),
           14.height,
-         Align(
-            alignment: constraint.maxWidth < kMaxMobileWidth ? Alignment.center  :  Alignment.centerLeft,
+          Align(
+            alignment: constraint.maxWidth < kMaxMobileWidth
+                ? Alignment.center
+                : Alignment.centerLeft,
             child: Text(
-                'Use our built-in analytics dashboard to pull valuable insights and monitor the value of your Krypto portfolio over time.',
+                constraint.maxWidth < kMaxMobileWidth
+                    ? 'Use our built-in analytics dashboard to pull valuable insights and monitor the value of your Krypto portfolio over time.'
+                    : 'Use our built-in analytics dashboard to pull\nvaluable insights and monitor the value of your\nKrypto portfolio over time.',
                 textAlign: constraint.maxWidth < kMaxMobileWidth
                     ? TextAlign.center
                     : TextAlign.left,
                 style: GoogleFonts.outfit(
-          
+
                     // fontWeight: FontWeight.w600,
                     color: Colors.white,
                     height: 1.6,
                     fontSize: 18)),
           ),
-
         ],
       );
     });

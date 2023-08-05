@@ -6,6 +6,7 @@ import 'package:buy_nft/widgets/gradients.dart';
 import 'package:buy_nft/widgets/home_title.dart';
 import 'package:buy_nft/widgets/testimonals_title_widget.dart';
 import 'package:buy_nft/widgets/testimonials.dart';
+import 'package:buy_nft/widgets/view_pricing_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -115,6 +116,9 @@ class MobileScreen extends HookWidget {
                     const TestimonialText(),
                     85.height,
                     const Testimonials(),
+                    40.height,
+                    const ViewPricing(),
+                    40.height,
                   ],
                 ).paddingSymmetric(horizontal: 20)
               ],

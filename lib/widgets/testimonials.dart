@@ -1,3 +1,4 @@
+import 'package:buy_nft/widgets/constants.dart';
 import 'package:buy_nft/widgets/testimonials_list.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,29 +13,6 @@ class Testimonials extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const ColorFilter greyscale = ColorFilter.matrix(<double>[
-      0.2126,
-      0.7152,
-      0.0722,
-      0,
-      0,
-      0.2126,
-      0.7152,
-      0.0722,
-      0,
-      0,
-      0.2126,
-      0.7152,
-      0.0722,
-      0,
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-    ]);
-
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
@@ -81,7 +59,7 @@ class Testimonials extends StatelessWidget {
                           ),
                         ]),
                       ),
-                      20.height
+                      20.width
                     ],
                   ),
                   Positioned(
