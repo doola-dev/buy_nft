@@ -6,6 +6,7 @@ import 'package:buy_nft/widgets/buy_sell_button.dart';
 import 'package:buy_nft/widgets/call_to_action.dart';
 import 'package:buy_nft/widgets/constants.dart';
 import 'package:buy_nft/widgets/gradients.dart';
+import 'package:buy_nft/widgets/home_navigation.dart';
 import 'package:buy_nft/widgets/home_title.dart';
 import 'package:buy_nft/widgets/testimonals_title_widget.dart';
 import 'package:buy_nft/widgets/testimonials.dart';
@@ -50,7 +51,7 @@ class DesktopScreen extends HookWidget {
                               Text('KYPTO',
                                   style: GoogleFonts.outfit(
                                       color: Colors.white, fontSize: 20)),
-                              navigationBar
+                              const HomeNavigation()
                             ]),
                         180.height,
                         Row(

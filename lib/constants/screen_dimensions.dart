@@ -1,4 +1,4 @@
 
 
 const  kMaxMobileWidth = 700 ;
-const  kmaxDesktopWidth = 1200;
+const  kmaxTabWidth = 1200;

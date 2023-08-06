@@ -12,14 +12,16 @@ class HomeTitle extends StatelessWidget {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'Discover\nAnd Collect\nRare NFTs',
-            style: GoogleFonts.outfit(
-                fontWeight: FontWeight.w600,
-                color: Colors.white,
-                height: 1,
-                fontSize:  constraint.maxWidth < kMaxMobileWidth ? 60  : 80),
-          ),
+          Text('Discover\nAnd Collect\nRare NFTs',
+              style: GoogleFonts.outfit(
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                  height: 1,
+                  fontSize: constraint.maxWidth < kMaxMobileWidth
+                      ? 35
+                      : constraint.maxWidth < kmaxTabWidth
+                          ? 60
+                          : 80)),
           14.height,
           Text(
               'The most secure marketplace for buying\n and selling unique crypto assests',
