@@ -1,9 +1,11 @@
 import 'package:buy_nft/gen/assets.gen.dart';
 import 'package:buy_nft/widgets/analytics_text_widget.dart';
 import 'package:buy_nft/widgets/buy_sell_button.dart';
+import 'package:buy_nft/widgets/call_to_action.dart';
 import 'package:buy_nft/widgets/gradients.dart';
 import 'package:buy_nft/widgets/home_navigation.dart';
 import 'package:buy_nft/widgets/home_title.dart';
+import 'package:buy_nft/widgets/news_letter.dart';
 import 'package:buy_nft/widgets/testimonals_title_widget.dart';
 import 'package:buy_nft/widgets/testimonials.dart';
 import 'package:buy_nft/widgets/view_pricing_tab.dart';
@@ -29,7 +31,6 @@ class MobileScreen extends HookWidget {
       backgroundColor: AppColor.primary,
       endDrawer: Drawer(
         width: 250,
-        
         backgroundColor: AppColor.primary,
         child: ListView(
           children: [
@@ -75,7 +76,7 @@ class MobileScreen extends HookWidget {
 
                           const Icon(
                             Icons.menu,
-                            size: 50,
+                            size: 40,
                             color: Colors.white,
                           ).onTap(
                             () {
@@ -120,6 +121,10 @@ class MobileScreen extends HookWidget {
                     const Testimonials(),
                     40.height,
                     const ViewPricing(),
+                    40.height,
+                    const CallToAction(),
+                    40.height,
+                    const NewsLetter().center(),
                     40.height,
                   ],
                 ).paddingSymmetric(horizontal: 20)
