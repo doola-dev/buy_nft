@@ -1,4 +1,4 @@
 
 
-const  kMaxMobileWidth = 600 ;
-const  kmaxTabWidth = 1200;
+const  double kMaxMobileWidth = 600 ;
+const  double kmaxTabWidth = 1200;

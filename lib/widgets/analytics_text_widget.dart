@@ -59,7 +59,7 @@ class Analytics extends StatelessWidget {
                     fontSize: 18)),
           ),
         ],
-      );
+      ).center();
     });
   }
 }
