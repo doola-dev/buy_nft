@@ -16,7 +16,9 @@ class Analytics extends StatelessWidget {
           Align(
             alignment: constraint.maxWidth < kMaxMobileWidth
                 ? Alignment.center
-                : Alignment.centerLeft,
+                : constraint.maxWidth < kmaxTabWidth
+                    ? Alignment.center
+                    : Alignment.centerLeft,
             child: Text(
               'ANALYTICS',
               textAlign: TextAlign.left,
@@ -31,7 +33,9 @@ class Analytics extends StatelessWidget {
           Align(
             alignment: constraint.maxWidth < kMaxMobileWidth
                 ? Alignment.center
-                : Alignment.centerLeft,
+                : constraint.maxWidth < kmaxTabWidth
+                    ? Alignment.center
+                    : Alignment.centerLeft,
             child: Text('Built-In Analytics\nTo Track Your Nfts',
                 style: GoogleFonts.outfit(
                     fontWeight: FontWeight.w600,
@@ -43,7 +47,9 @@ class Analytics extends StatelessWidget {
           Align(
             alignment: constraint.maxWidth < kMaxMobileWidth
                 ? Alignment.center
-                : Alignment.centerLeft,
+                : constraint.maxWidth < kmaxTabWidth
+                    ? Alignment.center
+                    : Alignment.centerLeft,
             child: Text(
                 constraint.maxWidth < kMaxMobileWidth
                     ? 'Use our built-in analytics dashboard to pull valuable insights and monitor the value of your Krypto portfolio over time.'

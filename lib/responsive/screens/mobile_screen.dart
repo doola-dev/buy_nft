@@ -91,7 +91,7 @@ class MobileScreen extends HookWidget {
                     const BuySellButton(),
                     ConstrainedBox(
                       constraints: const BoxConstraints(),
-                      child: Assets.icons.computer.image(scale: 1),
+                      child: Assets.icons.computer.image(scale: 1).center(),
                     ),
                     30.height,
                     Text('FEATURED ON',
@@ -102,7 +102,7 @@ class MobileScreen extends HookWidget {
                           //  fontWeight: FontWeight.med
                         )).center(),
                     14.height,
-                    Assets.images.brands.image(scale: 1.5),
+                    Assets.images.brands.image(scale: 1.5).center(),
                     50.height,
                     const Analytics(),
                     ConstrainedBox(

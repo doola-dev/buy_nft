@@ -20,7 +20,7 @@ class HomeTitle extends StatelessWidget {
                   fontSize: constraint.maxWidth < kMaxMobileWidth
                       ? 45
                       : constraint.maxWidth < kmaxTabWidth
-                          ? 60
+                          ? 65
                           : 80)),
           14.height,
           Text(

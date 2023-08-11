@@ -16,7 +16,8 @@ class Testimonials extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
-        // mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+       crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           ...List.generate(
             testimonials.length,
@@ -86,10 +87,10 @@ class Testimonials extends StatelessWidget {
                       ],
                     ),
                   ),
-                ]),
-          ),
+                ]).center()
+          )
         ],
       ),
-    );
+    ).center();
   }
 }

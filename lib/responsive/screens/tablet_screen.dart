@@ -94,7 +94,7 @@ class TabletScreen extends HookWidget {
                     ConstrainedBox(
                       constraints: const BoxConstraints(),
                       child: Assets.icons.computer.image(scale: 1),
-                    ),
+                    ).center(),
                     30.height,
                     Text('FEATURED ON',
                         // textAlign: TextAlign.left,
@@ -104,7 +104,7 @@ class TabletScreen extends HookWidget {
                           //  fontWeight: FontWeight.med
                         )).center(),
                     14.height,
-                    Assets.images.brands.image(scale: 1.5),
+                    Assets.images.brands.image(scale: 1.5).center(),
                     50.height,
                     const Analytics(),
                     ConstrainedBox(
@@ -129,7 +129,7 @@ class TabletScreen extends HookWidget {
                     const NewsLetter().center(),
                     40.height,
                   ],
-                ).paddingSymmetric(horizontal: 20)
+                ).paddingSymmetric(horizontal: 40)
               ],
             )
           ],
