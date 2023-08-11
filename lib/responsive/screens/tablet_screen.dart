@@ -30,7 +30,7 @@ class TabletScreen extends HookWidget {
       key: _globalKey,
       backgroundColor: AppColor.primary,
       endDrawer: Drawer(
-        width: 250,
+        width: 500,
         backgroundColor: AppColor.primary,
         child: ListView(
           children: [
