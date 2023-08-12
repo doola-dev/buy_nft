@@ -42185,7 +42185,7 @@ hn(a,b){var s=null
 return new A.w9(A.aAr(s,s,new A.vL(this.a,b,s,s)),s,s,s,s,s,s,B.dh,s,s,B.D,B.c9,s,!1,!1,s,!1,!1,s)}}
 A.Ih.prototype={
 K(a){var s=null
-return new A.wQ(B.Ie,"Flutter Demo",A.aq5(s,B.ce,A.azC(A.a9d(s,s,s,A.eH(s,s,B.zv,s,s,s,s,s,s,s,s,100,s,s,B.an,s,s,!0,s,s,s,s,s,s,s,s),s,s,s,s,s,s,s,s,s,s,s)),s),!1,s)}}
+return new A.wQ(B.Ie,"Buy and Sell NFT",A.aq5(s,B.ce,A.azC(A.a9d(s,s,s,A.eH(s,s,B.zv,s,s,s,s,s,s,s,s,100,s,s,B.an,s,s,!0,s,s,s,s,s,s,s,s),s,s,s,s,s,s,s,s,s,s,s)),s),!1,s)}}
 A.JZ.prototype={
 K(a){return new A.f5(new A.a5F(this),null)}}
 A.a5F.prototype={
