@@ -49,6 +49,7 @@ class DesktopScreen extends HookWidget {
                             children: [
                               Text('KYPTO',
                                   style: GoogleFonts.outfit(
+                                    fontWeight: FontWeight.w500,
                                       color: Colors.white, fontSize: 20)),
                               const HomeNavigation()
                             ]),

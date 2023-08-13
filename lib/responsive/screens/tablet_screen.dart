@@ -74,6 +74,8 @@ class TabletScreen extends HookWidget {
                         children: [
                           Text('KYPTO',
                               style: GoogleFonts.outfit(
+                                 fontWeight: FontWeight.w500,
+
                                   color: Colors.white, fontSize: 22)),
 
                           const Icon(
