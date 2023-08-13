@@ -82,7 +82,7 @@ class NewsLetter extends StatelessWidget {
                 
                 
                 Container(
-                    height: constraint.maxWidth < kMaxMobileWidth ? 50 : 65,
+                    height: constraint.maxWidth < kMaxMobileWidth ? 50 : 55,
                     width: 120,
                     decoration: const BoxDecoration(
                       borderRadius: BorderRadius.horizontal(
