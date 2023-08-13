@@ -40,7 +40,7 @@ class NewsLetter extends StatelessWidget {
                     color: AppColor.secondary.withOpacity(0.18),
                   ),
                   height: constraint.maxWidth < kMaxMobileWidth ? 50 : 55,
-                  width: constraint.maxWidth < kMaxMobileWidth ? 300 : 320,
+                  width: constraint.maxWidth < kMaxMobileWidth ? 280 : 320,
                   child: TextField(
                     style: GoogleFonts.outfit(
                         fontSize: 18, letterSpacing: 1.5, color: Colors.white),
@@ -57,56 +57,61 @@ class NewsLetter extends StatelessWidget {
                       Positioned(
                 right: -30,
                
-                child:     ElevatedButton(
-              style: ElevatedButton.styleFrom(
+                child: 
+              //       ElevatedButton(
+              // style: ElevatedButton.styleFrom(
+              //   backgroundColor: AppColor.secondary,
+              //     shape: RoundedRectangleBorder(
+              //         borderRadius: BorderRadius.circular(35)),
+                 
+              //     minimumSize: Size(
+              //    constraint.maxWidth < kMaxMobileWidth ? 120: 140,
+              //       constraint.maxWidth < kMaxMobileWidth ? 50 : 62,
+              //     )),
+              // onPressed: () {
+              //   print('Submit Button Pressed');
+              // },
+              // child:    Text(
+              //           'SUBMIT',
+              //           style: GoogleFonts.outfit(
+              //               fontSize:   constraint.maxWidth < kMaxMobileWidth
+              //         ? 12 :12,
+              //               letterSpacing: 1.5,
+              //               color: Colors.white),
+              //         ).center()),
+                
+                
+                Container(
+                    height: constraint.maxWidth < kMaxMobileWidth ? 50 : 65,
+                    width: 120,
+                    decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.horizontal(
+                          left: Radius.circular(35),
+                          right: Radius.circular(35)),
+                      color: AppColor.secondary,
+                    ),
+                    child: ElevatedButton(
+                     style: ElevatedButton.styleFrom(
                 backgroundColor: AppColor.secondary,
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(35)),
-                 
-                  minimumSize: Size(
-                 constraint.maxWidth < kMaxMobileWidth ? 120: 140,
-                    constraint.maxWidth < kMaxMobileWidth ? 58 : 62,
-                  )),
-              onPressed: () {
-                print('Submit Button Pressed');
-              },
-              child:    Text(
+                      borderRadius: BorderRadius.circular(35)),),
+
+                          onPressed: () {
+                  print('Submit Button Pressed');
+                },
+                      child: Text(
                         'SUBMIT',
                         style: GoogleFonts.outfit(
                             fontSize:   constraint.maxWidth < kMaxMobileWidth
-                      ? 12 :12,
+                      ? 12 :18,
                             letterSpacing: 1.5,
                             color: Colors.white),
-                      ).center()),
-                
-                
-                // ElevatedButton(
-                //   //  hoverColor: Colors.transparent,
-                //   onPressed: () {
-                //     print('Submit Button Pressed');
-                //   },
-                //   child: Container(
-                //       height: constraint.maxWidth < kMaxMobileWidth ? 50 : 65,
-                //       width: 120,
-                //       decoration: const BoxDecoration(
-                //         borderRadius: BorderRadius.horizontal(
-                //             left: Radius.circular(35),
-                //             right: Radius.circular(35)),
-                //         color: AppColor.secondary,
-                //       ),
-                //       child: Text(
-                //         'SUBMIT',
-                //         style: GoogleFonts.outfit(
-                //             fontSize:   constraint.maxWidth < kMaxMobileWidth
-                //       ? 12 :18,
-                //             letterSpacing: 1.5,
-                //             color: Colors.white),
-                //       ).center()),
-                // ),
+                      ).center(),
+                    )),
               ),
            
             ],
-          )
+          ).center()
         ],
       );
     });
