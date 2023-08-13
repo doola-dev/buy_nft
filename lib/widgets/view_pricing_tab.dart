@@ -40,16 +40,17 @@ class ViewPricing extends StatelessWidget {
                     height: 1,
                     fontSize: constraint.maxWidth < kMaxMobileWidth ? 35 : 55)),
             45.height,
-            InkWell(
-              hoverColor: Colors.amber,
-              onTap: () {},
-              child: Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(35),
-                    color: Colors.black),
-                padding: constraint.maxWidth < kMaxMobileWidth
-                    ? const EdgeInsets.symmetric(vertical: 15, horizontal: 50)
-                    : const EdgeInsets.symmetric(vertical: 20, horizontal: 80),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.black,
+                  padding: constraint.maxWidth < kMaxMobileWidth
+                      ? const EdgeInsets.symmetric(vertical: 22, horizontal: 50)
+                      : const EdgeInsets.symmetric(
+                          vertical: 25, horizontal: 80),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(35)),
+                ),
+                onPressed: () {},
                 child: Text(
                   'VIEW OUR PRICING',
                   style: GoogleFonts.outfit(
@@ -57,9 +58,7 @@ class ViewPricing extends StatelessWidget {
                       fontSize: constraint.maxWidth < kMaxMobileWidth ? 15 : 22,
                       letterSpacing: 1.5,
                       fontWeight: FontWeight.w400),
-                ),
-              ),
-            )
+                )),
           ],
         ),
       ).center();

@@ -12,46 +12,47 @@ class BuySellButton extends StatelessWidget {
     return LayoutBuilder(builder: (context, constraints) {
       return Row(
         children: [
-          InkWell(
-            onTap: () {},
-            child: Container(
-                height: constraints.maxWidth < kMaxMobileWidth ? 40 : 55,
-                width: constraints.maxWidth < kMaxMobileWidth ? 125 : 250,
-                decoration: BoxDecoration(
-                  color: AppColor.secondary,
-                  borderRadius: BorderRadius.circular(45),
+             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+              backgroundColor: AppColor.secondary,
+                  shape: RoundedRectangleBorder(
+                    
+                      borderRadius: BorderRadius.circular(45)),
+                  // side: const BorderSide(width: 1, color: AppColor.secondary),
+                  minimumSize: Size(
+                    constraints.maxWidth < kMaxMobileWidth ? 125 : 250,
+                    constraints.maxWidth < kMaxMobileWidth ? 50 : 65,
+                  )),
+              onPressed: () {},
+              child: Text(
+                'SELL NFTS',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.outfit(
+                  color: Colors.white,
+                  fontSize: constraints.maxWidth < kMaxMobileWidth ? 12 : 16,
+                  //  fontWeight: FontWeight.med
                 ),
-                child: Text(
-                  'BUY NFTS',
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.outfit(
-                    color: Colors.white,
-
-                    fontSize: constraints.maxWidth < kMaxMobileWidth ? 12 : 16,
-                    //  fontWeight: FontWeight.med
-                  ),
-                ).center()),
-          ),
+              ).center()),
           16.width,
-          InkWell(
-              onTap: () {},
-              child: Container(
-                  height: constraints.maxWidth < kMaxMobileWidth ? 40 : 55,
-                  width: constraints.maxWidth < kMaxMobileWidth ? 125 : 250,
-                  decoration: BoxDecoration(
-                    border: Border.all(width: 1, color: AppColor.lightBlue),
-                    borderRadius: BorderRadius.circular(45),
-                  ),
-                  child: Text(
-                    'SELL NFTS',
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.outfit(
-                      color: Colors.white,
-                      fontSize:
-                          constraints.maxWidth < kMaxMobileWidth ? 12 : 16,
-                      //  fontWeight: FontWeight.med
-                    ),
-                  ).center()))
+          ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(45)),
+                  side: const BorderSide(width: 1, color: AppColor.lightBlue),
+                  minimumSize: Size(
+                    constraints.maxWidth < kMaxMobileWidth ? 125 : 250,
+                    constraints.maxWidth < kMaxMobileWidth ? 50 : 65,
+                  )),
+              onPressed: () {},
+              child: Text(
+                'SELL NFTS',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.outfit(
+                  color: Colors.white,
+                  fontSize: constraints.maxWidth < kMaxMobileWidth ? 12 : 16,
+                  //  fontWeight: FontWeight.med
+                ),
+              ).center())
         ],
       );
     });
