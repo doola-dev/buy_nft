@@ -12,16 +12,15 @@ class BuySellButton extends StatelessWidget {
     return LayoutBuilder(builder: (context, constraints) {
       return Row(
         children: [
-             ElevatedButton(
+          ElevatedButton(
               style: ElevatedButton.styleFrom(
-              backgroundColor: AppColor.secondary,
+                  backgroundColor: AppColor.secondary,
                   shape: RoundedRectangleBorder(
-                    
                       borderRadius: BorderRadius.circular(45)),
                   // side: const BorderSide(width: 1, color: AppColor.secondary),
                   minimumSize: Size(
                     constraints.maxWidth < kMaxMobileWidth ? 125 : 250,
-                    constraints.maxWidth < kMaxMobileWidth ? 50 : 65,
+                    constraints.maxWidth < kMaxMobileWidth ? 45 : 65,
                   )),
               onPressed: () {},
               child: Text(
@@ -41,7 +40,7 @@ class BuySellButton extends StatelessWidget {
                   side: const BorderSide(width: 1, color: AppColor.lightBlue),
                   minimumSize: Size(
                     constraints.maxWidth < kMaxMobileWidth ? 125 : 250,
-                    constraints.maxWidth < kMaxMobileWidth ? 50 : 65,
+                    constraints.maxWidth < kMaxMobileWidth ? 45 : 65,
                   )),
               onPressed: () {},
               child: Text(

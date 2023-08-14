@@ -42301,12 +42301,12 @@ A.Em.prototype={
 K(a){return new A.f5(new A.Wh(),null)}}
 A.Wh.prototype={
 $2(a,b){var s,r,q=null,p="SELL NFTS",o=A.pq(45),n=b.b<600,m=n?125:250
-o=A.Gj(q,q,B.cy,q,q,q,q,q,q,q,q,new A.K(m,n?50:65),q,q,new A.cd(o,B.t),q,q,q,q,q)
+o=A.Gj(q,q,B.cy,q,q,q,q,q,q,q,q,new A.K(m,n?45:65),q,q,new A.cd(o,B.t),q,q,q,q,q)
 o=A.Zq(A.cS(A.aJ(p,q,q,q,A.aT().$2$color$fontSize(B.f,n?12:16),B.bC,q),q,q),new A.Wf(),o)
 m=A.jX(16)
 s=A.pq(45)
 r=n?125:250
-s=A.Gj(q,q,q,q,q,q,q,q,q,q,q,new A.K(r,n?50:65),q,q,new A.cd(s,B.t),B.xJ,q,q,q,q)
+s=A.Gj(q,q,q,q,q,q,q,q,q,q,q,new A.K(r,n?45:65),q,q,new A.cd(s,B.t),B.xJ,q,q,q,q)
 return A.he(A.a([o,m,A.Zq(A.cS(A.aJ(p,q,q,q,A.aT().$2$color$fontSize(B.f,n?12:16),B.bC,q),q,q),new A.Wg(),s)],t.p),B.U,B.J,B.y)},
 $S:94}
 A.Wf.prototype={
